@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import { GiHamburgerMenu } from "react-icons/gi"
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -25,22 +26,22 @@ const Navbar = () => {
                         display: openMenu ? "flex" : "none"
                     }}
                 >
-                    <a className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/">Home</a>
-                    <a className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/about">About</a>
-                    <a className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/services">Services</a>
-                    <a className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/portfolio">Portfolio</a>
-                    <a className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/Contact">Contact</a>
+                    <Link className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/">Home</Link>
+                    <Link className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/about">About</Link>
+                    <Link className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/services">Services</Link>
+                    <Link className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/portfolio">Portfolio</Link>
+                    <Link className='small_manu' onClick={()=>{setoOpenMenu(false)}} href="/Contact">Contact</Link>
                 </div>
             </div>
 
             <div
                 className='hidden lg:flex flex-row w-full h-12 justify-between items-center'
             >
-                <a className='underline' href="/">Home</a>
-                <a className='underline' href="/about">About</a>
-                <a className='underline' href="/services">Services</a>
-                <a className='underline' href="/portfolio">Portfolio</a>
-                <a className='underline' href="/contact">Contact</a>
+                <Link className='underline' href="/">Home</Link>
+                <Link className='underline' href="/about">About</Link>
+                <Link className='underline' href="/services">Services</Link>
+                <Link className='underline' href="/portfolio">Portfolio</Link>
+                <Link className='underline' href="/contact">Contact</Link>
             </div>
 
 
